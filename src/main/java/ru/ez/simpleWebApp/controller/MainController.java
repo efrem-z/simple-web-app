@@ -1,4 +1,4 @@
-package ru.ez.simpleWebApp;
+package ru.ez.simpleWebApp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,10 +13,10 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
     private  MessageRepo messageRepo;
     @Autowired
-    public GreetingController(MessageRepo messageRepo) {
+    public MainController(MessageRepo messageRepo) {
         this.messageRepo = messageRepo;
     }
 
