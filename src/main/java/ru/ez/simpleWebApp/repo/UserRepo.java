@@ -5,4 +5,6 @@ import ru.ez.simpleWebApp.domain.User;
 
 public interface UserRepo extends JpaRepository<User, Long> {
     User findByUsername(String username);
+
+    User findByActivationCode(String code);
 }
